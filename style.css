@@ -1,0 +1,1247 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #E6D6F5;
+    color: #3a2f44;
+}
+
+/* NAVBAR */
+nav {
+    background:#E6D6F5;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px #00000010;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #73529b;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3d2f44;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ad6cbd;
+}
+
+/* JUMBOTRON */
+.hero {
+    min-height: 430px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #E6D6F5, #9673B9);
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #222222;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    max-width: 550px;
+}
+
+/* TOMBOL */
+.btn {
+    display: inline-block;
+    background: #9673B9;
+    color: white;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #9673B9;
+}
+
+/* SECTION */
+section {
+    padding: 65px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #9673B9;
+    font-size: 30px;
+}
+
+/* PRODUK */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px #00000012;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 18px;
+}
+
+.product-info h3 {
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #E6D6F5;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-info button {
+    width: 100%;
+}
+
+/* KERANJANG */
+.cart-container {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    gap: 10px;
+}
+
+.cart-item button {
+    background: #E6D6F5;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.total {
+    text-align: right;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* CHECKOUT */
+.checkout-container {
+    background: white;
+    max-width: 650px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+.checkout-container label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+}
+
+.checkout-container input,
+.checkout-container textarea,
+.checkout-container select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.checkout-container button {
+    width: 100%;
+}
+
+/* KONTAK */
+#kontak {
+    background: #f0e1d7;
+    text-align: center;
+    line-height: 2.2;
+}
+
+/* FOOTER */
+footer {
+    background: #654737;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.8;
+}
+
+/* RESPONSIVE */
+@media(max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    section {
+        padding: 45px 5%;
+    }
+}
+body {
+    background-color: #fffaf7;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #ead5c7;
+    padding: 20px;
+}
+/* HALAMAN PRODUK */
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 18px;
+}
+
+.product-info h3 {
+    font-size: 17px;
+    margin-bottom: 12px;
+    color: #654737;
+}
+
+.product-info .price {
+    font-size: 17px;
+    color: #a36e50;
+    font-weight: bold;
+}
+
+.product-info button {
+    width: 100%;
+    margin-top: 12px;
+}
+/* HALAMAN KERANJANG */
+.cart-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    border-bottom: 1px solid #eee;
+    gap: 15px;
+}
+
+.cart-item strong {
+    color: #654737;
+    font-size: 16px;
+}
+
+.cart-item button {
+    background: #b85c52;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background: #923e36;
+}
+
+.total {
+    text-align: right;
+    font-size: 22px;
+    font-weight: bold;
+    color: #76513e;
+    margin: 25px 0;
+}
+/* HALAMAN CHECKOUT */
+.checkout-container {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.checkout-container h3 {
+    color: #76513e;
+    margin-bottom: 15px;
+}
+
+.checkout-summary {
+    background: #fff5ee;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.checkout-container label {
+    display: block;
+    font-weight: bold;
+    margin: 18px 0 8px;
+    color: #654737;
+}
+
+.checkout-container input,
+.checkout-container textarea,
+.checkout-container select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddc9bb;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    background: #fffdfb;
+}
+
+.checkout-container input:focus,
+.checkout-container textarea:focus,
+.checkout-container select:focus {
+    border-color: #9b6b52;
+}
+
+.checkout-container button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    font-size: 16px;
+}
+/* SEMUA HALAMAN */
+section {
+    min-height: 300px;
+}
+
+.section-title {
+    font-size: 30px;
+    text-align: center;
+    color: #76513e;
+    margin-bottom: 35px;
+}
+
+footer {
+    background: #654737;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 900px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-container,
+    .checkout-container {
+        padding: 18px;
+    }
+
+    .cart-item {
+        flex-wrap: wrap;
+    }
+}
+
+/* HALAMAN CHECKOUT */
+#checkout {
+    background-color: #fffaf7;
+    padding: 70px 8%;
+}
+
+#checkout .section-title {
+    font-size: 32px;
+    color: #76513e;
+    margin-bottom: 40px;
+}
+
+.checkout-container {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.checkout-container h3 {
+    color: #76513e;
+    margin-bottom: 15px;
+}
+
+.checkout-container label {
+    display: block;
+    margin: 18px 0 8px;
+    font-weight: bold;
+    color: #654737;
+}
+
+.checkout-container input,
+.checkout-container textarea,
+.checkout-container select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddc9bb;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #fffaf7;
+    outline: none;
+}
+
+.checkout-container input:focus,
+.checkout-container textarea:focus,
+.checkout-container select:focus {
+    border-color: #9b6b52;
+}
+
+.checkout-container button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    font-size: 16px;
+    border: none;
+}
+/* RESPONSIVE KERANJANG DAN CHECKOUT */
+@media (max-width: 600px) {
+
+    #keranjang,
+    #checkout {
+        padding: 40px 5%;
+    }
+
+    .cart-container,
+    .checkout-container {
+        padding: 20px;
+    }
+
+    .cart-item {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .total {
+        font-size: 19px;
+    }
+
+    .cart-container .btn {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+/* KOTAK KONTAK */
+#kontak {
+    padding: 60px 20px;
+    background: #fdf5f2;
+}
+
+.kontak-container {
+    display: flex;
+    justify-content: center;
+}
+
+.kontak-box {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    line-height: 2;
+}
+
+.kontak-box h3 {
+    color: #8b5e5e;
+    margin-bottom: 15px;
+}
+
+.kontak-box p {
+    color: #555;
+}
+#kontak .kontak-container .kontak-box {
+    display: block;
+    background-color: white;
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 2px solid #d8aaaa;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: #9673B9;
+    color: white;
+    padding: 40px 8% 15px;
+    font-family: Arial, sans-serif;
+}
+
+/* Container Footer */
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: start;
+}
+
+/* Bagian Footer */
+.footer-section {
+    text-align: left;
+}
+
+.footer-section h2 {
+    color: #facc15d4;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.footer-section h3 {
+    color: #facc15;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    color: #e2e8f0;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 5px 0;
+}
+
+/* Media Sosial */
+.footer-social {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px 0;
+}
+
+.footer-social h3 {
+    color: #facc15;
+    margin-bottom: 15px;
+}
+
+.footer-social a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: #facc15;
+}
+
+/* Copyright */
+.footer-bottom {
+    border-top: 1px solid #475569;
+    margin-top: 20px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+/* Tampilan Tablet */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+/* Tampilan HP */
+@media (max-width: 480px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-section {
+        text-align: left;
+    }
+}
+
+
+/* JUMBOTRON */
+.jumbotron {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background: #111;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Efek gelap */
+.slide::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    pointer-events: none;
+}
+
+/* Tulisan */
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 2;
+}
+
+.slide-content h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.slide-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* Tombol */
+.btn-shop {
+    background: white;
+    color: black;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Panah */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.prev { left: 15px; }
+.next { right: 15px; }
+
+/* Titik */
+.dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #aaa;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .jumbotron {
+        height: 350px;
+    }
+
+    .slide-content h1 {
+        font-size: 25px;
+    }
+
+    .slide-content p {
+        font-size: 14px;
+    }
+}
+
+/* PERBAIKAN JUMBOTRON */
+
+.jumbotron {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background: #b18acb;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide  {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
+    background: #b18acb;
+}
+
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.slide::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    pointer-events: none;
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 2;
+}
+
+.slide-content h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.slide-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn-shop {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.prev { left: 15px; }
+.next { right: 15px; }
+
+.dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #aaa;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: white;
+}
+
+/* JUMBOTRON FASHION STORE */
+
+.jumbotron {
+    position: relative;
+    display: block !important;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    animation: muncul 1s ease;
+}
+
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.jumbotron .slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
+}
+
+.jumbotron .slide.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+.jumbotron .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    border-radius: 12px;
+}
+
+.slide-content h1 {
+    font-size: 38px;
+}
+
+.slide-content p {
+    font-size: 18px;
+}
+
+.btn-shop {
+    display: inline-block;
+    background: #9673B9;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.jumbotron .prev,
+.jumbotron .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.jumbotron .prev {
+    left: 20px;
+}
+
+.jumbotron .next {
+    right: 20px;
+}
+
+.jumbotron .dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+}
+
+.jumbotron .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.jumbotron .dot.active {
+    background: #9673B9;
+}
+/* PERBAIKAN TAMPILAN JUMBOTRON */
+.jumbotron {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    padding: 0 !important;
+    margin: 0;
+    overflow: hidden;
+    background: #b28acb;
+}
+
+.jumbotron .slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.jumbotron .slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
+}
+
+.jumbotron .slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.jumbotron .slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.jumbotron .slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    max-width: 550px;
+    padding: 15px 25px;
+    text-align: center;
+    color: white;
+    background: transparent;
+    border-radius: 12px;
+}
+
+.jumbotron .slide-content h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.jumbotron .slide-content p {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.jumbotron .dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.jumbotron .prev,
+.jumbotron .next {
+    z-index: 5;
+}
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    z-index: 2;
+}
+
+/* =================================
+   BUTTERFLY AURA FASHION STORE
+================================= */
+
+:root {
+    --butterfly-purple: #9673B9;
+    --butterfly-pink: #f5c9e8;
+    --butterfly-lavender: #ead8ff;
+}
+
+/* Background aura */
+body {
+    background:
+        radial-gradient(circle at 10% 20%, #f5c9e8 0%, transparent 30%),
+        radial-gradient(circle at 90% 80%, #c9a5ed 0%, transparent 35%),
+        linear-gradient(135deg, #f9edff, #ead8ff, #fce5f4);
+    background-attachment: fixed;
+}
+
+/* Aura pada seluruh halaman */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background:
+        radial-gradient(circle at 20% 30%,
+        rgba(255,255,255,.45), transparent 20%),
+        radial-gradient(circle at 80% 60%,
+        rgba(255,192,235,.25), transparent 25%);
+}
+
+/* Semua konten tetap bisa diklik */
+header, nav, main, section, footer,
+.container, .products, .product-container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Kupu-kupu dekorasi */
+.butterfly {
+    position: fixed;
+    font-size: 27px;
+    pointer-events: none;
+    z-index: 10;
+    opacity: .7;
+    filter: drop-shadow(0 0 8px #e8aaff);
+    animation: butterflyFloat 7s ease-in-out infinite;
+}
+
+.butterfly-one {
+    top: 20%;
+    left: 3%;
+}
+
+.butterfly-two {
+    top: 55%;
+    right: 4%;
+    animation-delay: 2s;
+}
+
+.butterfly-three {
+    bottom: 12%;
+    left: 12%;
+    animation-delay: 4s;
+}
+
+.butterfly-four {
+    top: 75%;
+    right: 15%;
+    animation-delay: 1s;
+}
+
+@keyframes butterflyFloat {
+    0%, 100% {
+        transform: translateY(0) rotate(-10deg);
+    }
+    50% {
+        transform: translateY(-25px) rotate(15deg);
+    }
+}
+
+/* Efek tombol */
+button, .btn, .button {
+    transition: .3s ease;
+}
+
+button:hover, .btn:hover, .button:hover {
+    box-shadow: 0 0 18px #d6a4ff;
+    transform: translateY(-3px);
+}
+
+/* Efek kartu produk */
+.product-card, .card {
+    border: 1px solid rgba(180, 130, 210, .25);
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(150, 115, 185, .12);
+    transition: .3s ease;
+}
+
+.product-card:hover, .card:hover {
+    box-shadow: 0 8px 25px rgba(170, 110, 210, .3);
+    transform: translateY(-5px);
+}
+
+/* Footer aura */
+footer {
+    background: linear-gradient(135deg, #9673B9, #c59bdc) !important;
+    color: white;
+}
